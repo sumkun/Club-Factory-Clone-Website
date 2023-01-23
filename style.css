@@ -95,21 +95,21 @@ header{
     background-color: grey;
 }
 
-.cat-1{
+.category-items{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+}
+/* .cat-1{
+    
 }
 .cat-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    
 }
 .cat-3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    
+} */
 
 
 
@@ -181,4 +181,21 @@ header{
     width: 200px;
     height: 200px;
     border-radius: 100px;
+}
+
+@media (max-width: 950px){
+    .main-header{
+        display: block;
+        text-align: center;
+    }
+    .header-img, .header-btn, .main-heading{
+        padding: 20px;
+    }
+    .header-section{
+        padding: 50px;
+        /* background-color: #7286D3; */
+        background: url(https://www.statcan.gc.ca/o1/sites/default/files/2021-11/shopping_2.jpg);
+        background-size: center;
+    }
+
 }
